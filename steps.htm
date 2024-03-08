@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steps | step 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+    <style>
+        /* css reset */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            color: rgba(0, 0, 0, 0.932);
+            padding: 50px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            margin: 20px;
+        }
+
+        header a:not(.end) {
+            text-decoration: none;
+            margin-inline: 5px;
+            padding: 10px 15px;
+            background-color: rgb(226, 226, 226);
+            color: black;
+            transition: all 100ms;
+            font-weight: 600;
+        }
+
+        #crnt {
+            background-color: #72A3DE;
+        }
+
+        .header:hover {
+            font-size: 17px;
+            background-color: rgb(214, 214, 214);
+            outline: 2px solid grey;
+            font-weight: 550;
+        }
+
+        #crnt:hover {
+            background-color: #8abbf7;
+        }
+
+
+
+
+
+        #rel {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            border: 2px solid gray;
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        #rel {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            padding: 0 2px;
+        }
+
+        input {
+margin-bottom: 20px;       
+     color: black;
+     padding-block: 3px;
+     padding-inline-start: 2px;
+    
+        }
+
+        .end {
+            background-color: #8abbf7;
+            color: black;
+            text-decoration: none;
+            padding: 5px 20px;
+            border-radius: 100vh;
+            transition: all 100ms;
+        }
+        .end:hover{
+            color: #589ff7;
+            background-color: white;
+        }
+        .end:hover a i{
+            transform: rotateX('30deg');
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+
+        <header>
+            <a href="#" id="crnt" class="header">
+                Step 1 : Account
+            </a><a href="./step-2.html" class="header">
+                Step 2: personal details
+            </a><a href="/.step-3.html" class="header">
+                step 3:Your review
+            </a>
+        </header>
+
+        <main>
+            <div id="wrapper">
+                <a href="#" id="rel">Account</a>
+
+                <br><br>
+                Email Address:
+                <input type="email" placeholder="enter your Email Address"><br>
+                password
+                <input type="password" placeholder="Enter Your Password"><br>
+                Confirm Password:
+                <input type="password" placeholder="Confirm Your Password">
+<div id="buttons">
+                <a href="./index.html" class="end"><i class="ri-arrow-left-circle-line"></i>Back</a>
+                <a href="./step-2.html" class="end">Next <i class="ri-arrow-right-circle-line"></i> </a>
+
+                </div>
+
+            </div>
+        </main>
+
+
+    </center>
+</body>
+
+</html>

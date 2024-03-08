@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steps | step-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        /* css reset */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            color: rgba(0, 0, 0, 0.932);
+            padding: 50px;
+        }
+        body a{
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            margin: 20px;
+        }
+
+        header a:not(.end) {
+            text-decoration: none;
+            margin-inline: 5px;
+            padding: 10px 15px;
+            background-color: rgb(226, 226, 226);
+            color: black;
+            transition: all 100ms;
+            font-weight: 600;
+        }
+
+        #crnt {
+            background-color: #72A3DE;
+        }
+
+        .header:hover {
+            font-size: 17px;
+            background-color: rgb(214, 214, 214);
+            outline: 2px solid grey;
+            font-weight: 550;
+        }
+
+        #crnt:hover {
+            background-color: #8abbf7;
+        }
+
+        #done {
+            background-color: lightgreen;
+            transition: all 50ms;
+        }
+
+        #done:hover {
+            background-color: rgb(118, 248, 118);
+        }
+
+
+
+        #rel {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            border: 2px solid gray;
+            position: relative;
+            width: 500px;
+            height: 400px;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        #rel {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            padding: 0 2px;
+        }
+
+        input {
+            margin-bottom: 20px;
+            color: black;
+            padding-block: 3px;
+            padding-inline-start: 2px;
+
+        }
+
+        .end {
+            background-color: #8abbf7;
+            color: black;
+            text-decoration: none;
+            padding: 5px 20px;
+            border-radius: 100vh;
+            transition: all 100ms;
+        }
+
+        .end:hover,
+        .end:focus {
+            color: #589ff7;
+            background-color: white;
+        }
+
+        .end:hover .end:focus a i {
+            transform: rotateX('30deg');
+        }
+        button.end{
+            outline: none;
+            border: none;
+        }
+        form{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        input{
+            margin-block: 10px;
+        }
+        select{
+            background-color: white;
+            border: 2px solid gray;
+            padding: 5px;
+        }
+        div{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <header>
+            <a href="#" class="header" id="done">
+                Step 1 : Account
+            </a><a href="./step-2.html" id="done" class="header">
+                Step 2: personal details
+            </a><a href="/.step-3.html" id="crnt" class="header">
+                step 3:Your review
+            </a>
+        </header>
+
+
+
+        <main>
+            <div id="wrapper">
+                <a href="#" id="rel" style="cursor: auto;">Your Review</a>
+
+                <br><br>
+            <form >
+                <div>
+                    How did you hear about us ?
+                    <select>
+                        <option selected> Select Your Option</option>
+                        <option>Facebook</option>
+                        <option>Instagram</option>
+                        <option>Pinterest</option>
+                    </select>
+                </div>
+<div>
+                    Woud You Visit Again?
+                    <br>
+                    <input type="radio" name="opt" id="Yes"><label for="Yes">Yes</label>
+                    <input type="radio" name="opt" id="no"><label for="no">No</label>
+                    <input type="radio" name="opt" id="maybe"><label for="maybe">Maybe</label>
+                    </div>
+                    <div>
+                        Comments <br>
+                        <textarea name="cmnt"  rows="3" cols="40" placeholder="Enter Your Comments Here"></textarea>
+                    </div>
+                    <div>
+                        Documents
+                        <br>
+                        <input type="file">
+                    </div>
+                    <div>
+                    <input type="checkbox">  Sign me up for more details
+                </div>
+                    <div id="buttons">
+                        <a href="./step-2.html" class="end"><i class="ri-arrow-left-circle-line"></i>Back</a>
+                     <button type="submit" class="end"><a href="./final.html">Submit<i class="ri-arrow-right-circle-line"></i></a></button>
+    
+                    </div>
+    
+            </form>
+            </div>
+        </main>
+
+
+    </center>
+</body>
+
+</html>
